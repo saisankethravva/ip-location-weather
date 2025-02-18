@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cb6a151-25c3-4674-bd46-4273ee4fd709" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/src/main/java/com/ratelimiter/RatelimiterApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/src/main/resources/EcsLayout.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/src/main/resources/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratelimiter-weatherService/src/test/java/com/ratelimiter/RatelimiterApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,16 +19,18 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2t9hlLJSBeRErEGaWxlGBr264Xc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/saisankethravva/Desktop/ip-location-weather2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="/Users/saisankethravva/Desktop/location-weather/weather-service/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
