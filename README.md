@@ -1,11 +1,11 @@
 
-# Project Overview
+# 📌Project Overview
 
 This project implements two services:
 1. Weather API Service: Provides weather information based on IP addresses and utilizes Redis for caching.
 2. Rate Limiter Service: Protects the Weather API by applying rate limits via Spring Cloud Gateway.
 
-# System Architecture Overview
+# 🗂 System Architecture Overview
 
 Sequence Flow:
 
@@ -21,7 +21,7 @@ Stores results in Redis.
 
 ![Screenshot 2025-02-17 at 11 44 05 PM](https://github.com/user-attachments/assets/686dc7dd-5154-4488-a0ef-338c8a615bf1)
 
-# Prerequisites
+# ⚙️ Prerequisites
 1. Java 17 or higher
 2. Docker (for containerization)
 3. Redis (for caching)
@@ -90,6 +90,17 @@ Rate Limiting in Action: Demonstrates blocked requests due to exceeded limits.
 Exception Handling with incorrect IP
 
 <img width="1135" alt="Screenshot 2025-02-17 at 11 57 44 PM" src="https://github.com/user-attachments/assets/701b1093-5172-46f5-898d-df162b1245cf" />
+
+
+# 🐳 Docker Deployment
+
+```
+docker network create api-network
+docker build -t wweather-service./weather-service
+docker build -t ratelimiter-weatherService ./ratelimiter-weatherService
+docker run --network api-network -p 8080:8080 weather-service
+docker run --network api-network -p 8082:8082 ratelimiter-weatherService
+```
 
 
 
