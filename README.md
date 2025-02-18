@@ -67,6 +67,36 @@ mvn spring-boot:run
 ```
 
 
-Test with correct IP:
+Postman Client Request with IP: Displays request and response when providing an IP
+
+
+<img width="630" alt="Screenshot 2025-02-17 at 11 56 07 PM" src="https://github.com/user-attachments/assets/2c17e865-30b7-46a0-a920-c48f66b1286c" />
+
+
+Postman Client Request without IP: Shows how the system resolves the IP automatically.
+
+<img width="1196" alt="Screenshot 2025-02-17 at 11 56 21 PM" src="https://github.com/user-attachments/assets/bd061196-e1dd-4bbb-a11f-03383d54f5aa" />
+
+Redis Caching: Displays stored IP and weather data with TTL in Redis.
+
+<img width="1362" alt="Screenshot 2025-02-17 at 11 56 53 PM" src="https://github.com/user-attachments/assets/9b6bdf27-ec9f-49f6-ab68-44c6255ee59e" />
+
+
+Rate Limiting in Action: Demonstrates blocked requests due to exceeded limits.
+
+<img width="1117" alt="Screenshot 2025-02-17 at 11 57 28 PM" src="https://github.com/user-attachments/assets/9b70670f-3fc6-4710-a37a-20d3d8fcdb3c" />
+
+
+Exception Handling with incorrect IP
+
+<img width="1135" alt="Screenshot 2025-02-17 at 11 57 44 PM" src="https://github.com/user-attachments/assets/701b1093-5172-46f5-898d-df162b1245cf" />
+
+
+
+
+
+
+
+
 
 
