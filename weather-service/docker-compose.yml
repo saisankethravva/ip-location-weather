@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  weather-service:
+    image: weather-service:latest
+    build:
+      context: ./weather-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      retries: 3
+      timeout: 5s
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"

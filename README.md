@@ -1,1 +1,1 @@
-# ip-location-weather
+# location-weather
