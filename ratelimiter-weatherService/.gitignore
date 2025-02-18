@@ -55,7 +55,6 @@ Icon?
 *.jks
 application*.yml
 application*.yaml
-application*.properties
 
 ### Database ###
 *.db
