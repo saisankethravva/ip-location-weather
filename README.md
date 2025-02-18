@@ -7,11 +7,19 @@ This project implements two services:
 
 # System Architecture Overview
 
-Components:
-1. API Gateway (Rate Limiter): Routes requests and enforces rate limits.
-2. Weather API Service: Retrieves and processes weather data.
-3. Redis Cache: Caches weather responses to minimize external API calls.
-4. Client: Makes requests through the API Gateway.
+Sequence Flow:
+
+1. Postman Client sends request to Rate Limiter Service.
+2. Rate Limiter Service checks Redis for rate limits.
+3. If passed, forwards request to Weather API Service.
+4. Weather API Service extracts client IP.
+5. Checks Redis for cached weather data (TTL: 10 minutes).
+6. If not cached:
+Calls third-party IP location API.
+Uses city to call third-party weather API.
+Stores results in Redis.
+
+![Screenshot 2025-02-17 at 11 44 05 PM](https://github.com/user-attachments/assets/686dc7dd-5154-4488-a0ef-338c8a615bf1)
 
 # Prerequisites
 1. Java 17 or higher
@@ -57,5 +65,8 @@ open weather-service and ratelimiter-weatherService in separate windows in Intel
 mvn clean install
 mvn spring-boot:run
 ```
+
+
+Test with correct IP:
 
 
